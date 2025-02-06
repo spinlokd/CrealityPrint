@@ -149,6 +149,8 @@ if (NOT MSVC)
     add_compile_options(-fsigned-char)
 endif ()
 
+add_compile_options(-Wno-error=template-id-cdtor)
+
 # Display and check CMAKE_PREFIX_PATH
 message(STATUS "SLIC3R_STATIC: ${SLIC3R_STATIC}")
 if (NOT "${CMAKE_PREFIX_PATH}" STREQUAL "")
